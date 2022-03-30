@@ -10,5 +10,9 @@
   }
 
 .nav-link{
-    @apply mr-5 uppercase hover:text-primary hover:bg-white hover:p-2 transition duration-500 ease-in-out hover:opacity-80;
+    @apply mr-5 uppercase hover:text-primary hover:bg-white hover:p-2 transition duration-500 ease-in-out hover:opacity-80 hover:rounded hover:shadow;
+}
+
+.social-icon{
+    @apply text-xl text-white md:hover:text-secondary md:hover:opacity-90 hover:text-zinc-900;
 }

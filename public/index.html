@@ -11,9 +11,9 @@
 </head>
 <body class="bg-black-shade scroll-smooth">
     <!-- Header -->
-    <header class="md:flex justify-between items-center align-middle py-3 bg-primary sticky top-0">
-
-        <!-- Logo goes here -->
+    <header class="sticky top-0 z-50">
+        <nav id="nav" class="md:flex justify-between items-center py-3 bg-primary">
+            <!-- Logo goes here -->
         <div class="ml-6 md:ml-16 d-flex items-center justify-between" id="logo">
             <img src="images/logo.svg" alt="D Rwoy logo" class="inline-block w-10 object-cover">
             <a href="#" class="text-white text-2xl md:text-4xl font-semibold">D Rwoy</a>
@@ -26,16 +26,56 @@
         </div>
         <!-- End of hamburger menu button -->
 
-        <!-- Navmenu starts here -->
-            <ul class="hidden mt-5 md:mt-0 ml-8 md:ml-0 mr-10 pr-3 text-white md:flex flex-col md:flex-row tracking-widest leading-10" id="nav-menu">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#music" class="nav-link">Music</a></li>
-                <li><a href="#videos" class="nav-link">Videos</a></li>
-                <li><a href="#merch" class="nav-link">Merch</a></li>
-            </ul>
-        <!-- Navmenu ends here -->
+         <!-- Navmenu starts here -->
+         <ul class="py-3 md:py-0 hidden pl-8 md:pl-0 mr-10 text-white md:flex flex-col md:flex-row tracking-widest leading-10 bg-primary" id="nav-menu">
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#music" class="nav-link">Music</a></li>
+            <li><a href="#videos" class="nav-link">Videos</a></li>
+            <li><a href="#merch" class="nav-link">Merch</a></li>
+        </ul>
+    <!-- Navmenu ends here -->
+
+    </nav>
+
+         <!-- fixed social media widget goes here -->
+         <section class="hidden md:block top-1/3 md:top-28 right-10 fixed" id="social-menu">
+            <div class="flex md:flex-col gap-5">
+                <a href="#" target="_blank"><i class="social-icon bi bi-tiktok"></i></a>
+                <a href="#" target="_blank"><i class="social-icon bi bi-facebook"></i></a>
+                <a href="#" target="_blank"><i class="social-icon bi bi-snapchat"></i></a>
+                <a href="#" target="_blank"><i class="social-icon bi bi-instagram"></i></a>
+                <a href="#" target="_blank"><i class="social-icon bi bi-music-note-beamed"></i></a>
+                <a href="#" target="_blank"><i class="social-icon bi bi-spotify"></i></a>
+                <a href="#" target="_blank"><i class="social-icon bi bi-twitter"></i></a>
+                <a href="#" target="_blank"><i class="social-icon bi bi-youtube"></i></a>
+            </div>
+        </section>
+        
     </header>
     <!-- End of header -->
+
+    <!-- Main Content -->
+    <main id="main-content" class="relative container mt-20">
+
+       
+        <div class="text-center text-6xl text-lime-50">Main Content Goes here</div>
+        <!-- Hero section goes here -->
+
+        <!-- Music section goes here -->
+
+        <!-- Video section goes here -->
+        
+        <!-- Merch section goes here -->
+
+
+    </main>
+    <!-- End of Main Content -->
+
+    <!-- Footer -->
+    <footer class="bg-primary py-5 fixed bottom-0 w-full">
+        <p class="text-center text-lg text-white">This is the footer</p>
+    </footer>
+    <!-- End of footer -->
 
     <script src="/public/scripts/script.js"></script>
 </body>

@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;700&display=swap');
+
+@layer base {
+    html {
+        font-family: 'Poppins', sans-serif;
+    }
+  }
+
+.nav-link{
+    @apply mr-5 uppercase hover:text-primary hover:bg-white hover:p-2 transition duration-500 ease-in-out hover:opacity-80;
+}

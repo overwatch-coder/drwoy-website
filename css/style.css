@@ -14,5 +14,11 @@
 }
 
 .social-icon{
-    @apply text-xl text-white md:hover:text-secondary md:hover:opacity-90 hover:text-zinc-900;
+    @apply text-base md:text-xl text-white md:hover:text-secondary md:hover:opacity-90 hover:text-zinc-900;
 }
+
+.btn{
+    @apply hover:shadow-xl hover:border-2 hover:border-l-gray-300 focus:outline-none rounded text-light font-normal transition hover:bg-primary;
+}
+
+/* hhhh*/

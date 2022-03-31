@@ -527,6 +527,13 @@ html {
   position: sticky;
 }
 
+.inset-2\/4 {
+  top: 50%;
+  right: 50%;
+  bottom: 50%;
+  left: 50%;
+}
+
 .top-0 {
   top: 0px;
 }
@@ -663,6 +670,10 @@ html {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .grid-rows-3 {
   grid-template-rows: repeat(3, minmax(0, 1fr));
 }
@@ -687,8 +698,16 @@ html {
   justify-content: space-between;
 }
 
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
 .gap-5 {
   gap: 1.25rem;
+}
+
+.gap-4 {
+  gap: 1rem;
 }
 
 .scroll-smooth {
@@ -712,9 +731,18 @@ html {
   border-width: 1px;
 }
 
+.border-b-4 {
+  border-bottom-width: 4px;
+}
+
 .border-primary {
   --tw-border-opacity: 1;
   border-color: rgb(77 16 107 / var(--tw-border-opacity));
+}
+
+.border-b-primary {
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(77 16 107 / var(--tw-border-opacity));
 }
 
 .bg-primary {
@@ -731,8 +759,18 @@ html {
   background-color: #ffff;
 }
 
+.bg-lime-50 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(247 254 231 / var(--tw-bg-opacity));
+}
+
 .bg-black-shade {
   background-image: linear-gradient(180deg, #302E2E 0%, #242323 9%, #292424 68%, #312E2E 100%);
+}
+
+.object-contain {
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .object-cover {
@@ -783,6 +821,10 @@ html {
   padding-top: 0.75rem;
 }
 
+.pt-5 {
+  padding-top: 1.25rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -809,6 +851,11 @@ html {
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
 }
 
 .text-lg {
@@ -853,6 +900,11 @@ html {
 .text-primary {
   --tw-text-opacity: 1;
   color: rgb(77 16 107 / var(--tw-text-opacity));
+}
+
+.text-purple-800 {
+  --tw-text-opacity: 1;
+  color: rgb(107 33 168 / var(--tw-text-opacity));
 }
 
 .shadow {
@@ -949,29 +1001,27 @@ html {
   outline-offset: 2px;
 }
 
-/* for youtube video*/
-
-.youtube-player {
+.youtube {
   position: relative;
-  padding-bottom: 56.25%;
+  padding-bottom: 63%;
   height: 0;
   overflow: hidden;
   max-width: 100%;
-  background: #0000;
+  background: #000;
   margin: 5px;
 }
 
-.youtube-player iframe {
+.youtube iframe {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 50;
+  z-index: 30;
   background: transparent;
 }
 
-.youtube-player img {
+.youtube .thumb {
   -o-object-fit: cover;
      object-fit: cover;
   display: block;
@@ -989,11 +1039,11 @@ html {
   transition: 0.4s all;
 }
 
-.youtube-player img:hover {
+.youtube .thumb:hover {
   -webkit-filter: brightness(75%);
 }
 
-.youtube-player .play {
+.youtube .play {
   height: 72px;
   width: 72px;
   left: 50%;
@@ -1072,10 +1122,6 @@ html {
 
   .md\:hidden {
     display: none;
-  }
-
-  .md\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .md\:flex-row {

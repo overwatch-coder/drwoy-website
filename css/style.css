@@ -21,28 +21,27 @@
     @apply hover:shadow-xl hover:border-2 hover:border-l-gray-300 focus:outline-none rounded text-light font-normal transition hover:bg-primary;
 }
 
-/* for youtube video*/
-.youtube-player {
+.youtube {
     position: relative;
-    padding-bottom: 56.25%;
+    padding-bottom: 63%;
     height: 0;
     overflow: hidden;
     max-width: 100%;
-    background: #0000;
+    background: #000;
     margin: 5px;
   }
 
-  .youtube-player iframe {
+  .youtube iframe {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 50;
+    z-index: 30;
     background: transparent;
   }
 
-  .youtube-player img {
+  .youtube .thumb {
     object-fit: cover;
     display: block;
     left: 0;
@@ -61,11 +60,11 @@
     transition: 0.4s all;
   }
 
-  .youtube-player img:hover {
+  .youtube .thumb:hover {
     -webkit-filter: brightness(75%);
   }
 
-  .youtube-player .play {
+  .youtube .play {
     height: 72px;
     width: 72px;
     left: 50%;

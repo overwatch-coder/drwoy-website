@@ -12,7 +12,7 @@
 <body class="bg-black-shade scroll-smooth">
     <!-- Header -->
     <header class="sticky top-0 z-50">
-        <nav id="nav" class="md:flex justify-between items-center py-3 bg-primary">
+        <nav id="nav" class="md:flex justify-between items-center py-5 bg-primary">
             <!-- Logo goes here -->
         <div class="ml-6 md:ml-16 d-flex items-center justify-between" id="logo">
             <img src="images/logo.svg" alt="D Rwoy logo" class="inline-block w-10 object-cover">
@@ -22,7 +22,7 @@
 
         <!-- hamburger menu button -->
         <div class="md:hidden mr-5 absolute top-5 right-0">
-            <span><i class="bi bi-list text-4xl cursor-pointer text-white" id="toogle-btn"></i></span>
+            <span><i class="btn px-3 py-1 bi bi-list text-4xl cursor-pointer text-white hover:opacity-80" id="toogle-btn"></i></span>
         </div>
         <!-- End of hamburger menu button -->
 
@@ -38,7 +38,7 @@
     </nav>
 
          <!-- fixed social media widget goes here -->
-         <section class="hidden md:block top-1/3 md:top-28 right-10 fixed" id="social-menu">
+         <section class="hidden md:block top-[43%] md:top-28 right-10 fixed" id="social-menu">
             <div class="flex md:flex-col gap-5">
                 <a href="#" target="_blank"><i class="social-icon bi bi-tiktok"></i></a>
                 <a href="#" target="_blank"><i class="social-icon bi bi-facebook"></i></a>
@@ -57,10 +57,24 @@
     <!-- Main Content -->
     <main id="main-content" class="relative container mt-20">
 
-       
-        <div class="text-center text-6xl text-lime-50">Main Content Goes here</div>
         <!-- Hero section goes here -->
+        <section class="md:grid grid-cols-2 place-items-center">
+            <div class="col-span-1 md:pr-6 lg:pr-0">
+                <img src="images/trial.png" alt="hero image" class="hidden md:block shadow lg:w-3/4 object-cover">
+                <img src="images/hero.jpg" alt="hero image responsive" class="block md:hidden shadow w-full object-cover">
+            </div>
 
+            <div class="col-span-1 mt-8 md:mt-0 md:pr-5 text-center justify-self-center font-montserrat">
+                <h1 class="text-secondary font-bold text-xl md:text-3xl lg:text-5xl uppercase">
+                    <span class="md:block">Now that I'm</span>
+                    <span class="md:pt-3 md:block">a man</span>
+                </h1>
+                <p class="uppercase text-light text-4xl md:text-xl lg:text-base mt-5 font-bold">Available Now!</p>
+                <button class="btn bg-secondary mt-7 px-6 py-2">
+                    <a href="#" target="_blank" class="uppercase">Listen</a>
+                </button>
+            </div>
+        </section>
         <!-- Music section goes here -->
 
         <!-- Video section goes here -->
@@ -72,9 +86,9 @@
     <!-- End of Main Content -->
 
     <!-- Footer -->
-    <footer class="bg-primary py-5 fixed bottom-0 w-full">
+    <!-- <footer class="bg-primary py-5 fixed bottom-0 w-full">
         <p class="text-center text-lg text-white">This is the footer</p>
-    </footer>
+    </footer> -->
     <!-- End of footer -->
 
     <script src="/public/scripts/script.js"></script>

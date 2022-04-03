@@ -21,6 +21,10 @@
     @apply hover:shadow-xl hover:border-2 hover:border-gray-300 focus:outline-none rounded text-light font-normal transition hover:bg-primary;
 }
 
+.form-focus{
+  @apply rounded focus:border-primary focus:border-2 focus:ring-0 focus:outline-none;
+}
+
 .youtube {
     position: relative;
     padding-bottom: 0;

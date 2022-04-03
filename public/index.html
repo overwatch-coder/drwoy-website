@@ -126,7 +126,7 @@
                 <div class="mt-3 mb-5 py-2">
                     <div style="width: 100%; height: 500px;" class="youtube rounded-md" id="E2nQ5-xM2Tk"></div>
                 </div>
-                <div class="grid grid-rows-2 md:grid-cols-2 gap-5 md:h-[700px]">
+                <div class="grid grid-rows-2 lg:grid-cols-2 gap-5 lg:h-[700px]">
                     <div style="width: 100%; height: 500px;" class="youtube rounded-md" id="L-5AtWIZ5z8"></div>
                     <div style="width: 100%; height: 500px;" class="youtube rounded-md" id="2FikRYrknGc"></div>
                 </div>
@@ -137,27 +137,55 @@
 
         
         
-        <div class="container bg-lime-50 px-10">
+        <div class="container bg-lime-50">
             <!-- Merch section goes here -->
-            <section class="font-montserrat container mt-24 md:mt-2 pt-16">
+            <section class="font-montserrat container mt-24 lg:mt-2 pt-16">
                 <h1 class="uppercase text-5xl text-center border-b-4 border-b-primary text-primary font-medium pb-5">SHOP NEW MERCHANDISE!</h1>
                 <div class="text-center mt-16 pt-8 text-primary text-5xl">Coming soon...</div>
             </section>
             <!-- End of Merch Section -->
+            <hr class="border-[0.3px] border-primary opacity-[0.1] mt-28">
 
-            <section class="container mt-28 pt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore placeat delectus ut maiores soluta fugit nam velit non iusto ratione, culpa, molestiae vitae, quis error numquam vel recusandae voluptate quas. Facilis minus corporis tempore eaque libero optio deserunt ratione, fuga explicabo dolorum repellendus aperiam ipsam exercitationem, dolorem ullam porro delectus possimus voluptate, numquam hic natus. Commodi ad, autem necessitatibus nostrum molestias, corporis magnam mollitia esse dolor illo beatae optio, dolorem sunt rem odit temporibus accusamus recusandae illum? Nobis porro odit voluptas dolor architecto earum esse delectus, eos, qui vitae molestiae unde dolorum libero distinctio, quae accusamus aperiam. Soluta, natus ea?</section>
+            <section class="container mt-16 pt-16 pb-16">
+            <!-- News and Update Section -->
+                <div class="flex flex-col lg:flex-row pb-10 md:justify-between justify-center place-items-center container">
+                    <div>
+                        <img src="images/drwoy-news.jpg" alt="drwoy" class="object-contain w-full md:hidden lg:block lg:w-4/5">
+                    </div>
+
+                    <div>
+                        <h1 class="mt-10 md:mt-0 uppercase font-bold text-primary text-4xl md:text-6xl tracking-wide">News and <br> Updates</h1>
+                        <form action="#" class="mt-4 pt-4">
+                            <div class="mt-3">
+                                <label for="email">Email</label>
+                                <input type="email" name="email" id="email" placeholder="Email address" class="mt-4 form-input form-focus w-full">
+                            </div>
+
+                            <div class="mt-4">
+                                <label for="country">Country</label>
+                                <select name="country" id="country" class="form-select form-focus mt-4 px-3 py-3 w-full">
+                                    <option value="">Select your country</option>
+                                    <option value="ghana">Ghana</option>
+                                    <option value="morocco">Morocco</option>
+                                    <option value="nigeria">Nigeria</option>
+                                    <option value="france">France</option>
+                                </select>
+                            </div>
+                            <button class="w-full uppercase mt-7 py-3 px-4 text-light bg-primary rounded hover:opacity-95 hover:shadow-lg shadow transition">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            <!-- End of News & Update Section -->
+            </section>
         </div>
-
-        <!-- News and Update Section -->
-        <!-- End of News & Update Section -->
 
     </main>
     <!-- End of Main Content -->
 
     <!-- Footer -->
-    <!-- <footer class="bg-primary py-5 fixed bottom-0 w-full">
+    <footer class="bg-primary py-10 mt-28 bottom-0 w-full">
         <p class="text-center text-lg text-white">This is the footer</p>
-    </footer> -->
+    </footer>
     <!-- End of footer -->
 
     <script src="/public/scripts/script.js"></script>

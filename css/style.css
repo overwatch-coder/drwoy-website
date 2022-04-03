@@ -5,7 +5,7 @@
 
 @layer base {
     html {
-        font-family: 'Poppins', sans-serif;
+        font-family: 'Montserrat', sans-serif;
     }
   }
 
@@ -18,13 +18,13 @@
 }
 
 .btn{
-    @apply hover:shadow-xl hover:border-2 hover:border-l-gray-300 focus:outline-none rounded text-light font-normal transition hover:bg-primary;
+    @apply hover:shadow-xl hover:border-2 hover:border-gray-300 focus:outline-none rounded text-light font-normal transition hover:bg-primary;
 }
 
 .youtube {
     position: relative;
-    padding-bottom: 63%;
-    height: 0;
+    padding-bottom: 0;
+    height: 100%;
     overflow: hidden;
     max-width: 100%;
     background: #000;

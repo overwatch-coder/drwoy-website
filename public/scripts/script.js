@@ -4,7 +4,11 @@ let toogleBtn = document.querySelector('#toogle-btn');
 let navMenu = document.querySelector('#nav-menu');
 let socialMenu = document.querySelector('#social-menu');
 let countries = document.querySelector('#country');
+let currentYear = document.querySelector('#date');
 
+// getting current year
+let newDate = new Date();
+currentYear.innerHTML = newDate.getFullYear();
 
 // add event listeners
 toogleBtn.addEventListener('click', showNav);

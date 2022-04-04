@@ -1,10 +1,13 @@
-// declare variables
+window.addEventListener('DOMContentLoaded', () => {
+    // declare variables
 let toogleBtn = document.querySelector('#toogle-btn');
 let navMenu = document.querySelector('#nav-menu');
 let socialMenu = document.querySelector('#social-menu');
+let countries = document.querySelector('#country');
+
 
 // add event listeners
-toogleBtn.addEventListener('click', showNav); 
+toogleBtn.addEventListener('click', showNav);
 
 // add functions
 function showNav() {
@@ -58,3 +61,18 @@ function showNav() {
         this.parentNode.replaceChild(iframe, this);
     };
    });
+
+    // Getting all country names
+ fetch('https://restcountries.com/v2/all')
+ .then(response => response.json())
+ .then(data => {
+    let countryList = '';
+    data.forEach(country => {
+        let lowercase = country.name.toLowerCase();
+        let countryName = country.name;
+        countryList += `<option value="${lowercase}">${countryName}</option>`;
+     });
+     countries.innerHTML += countryList;
+ });
+
+});

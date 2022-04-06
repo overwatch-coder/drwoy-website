@@ -9,7 +9,7 @@
     <link href="style.css" rel="stylesheet">
     <title>D Rwoy Official | Welcome</title>
 </head>
-<body class="bg-black-shade scroll-smooth">
+<body class="bg-black-shade">
     <!-- Header -->
     <header class="sticky top-0 z-[100]">
         <nav id="nav" class="md:flex justify-between items-center py-5 bg-primary">
@@ -33,9 +33,9 @@
             <li><a href="#videos" class="nav-link">Videos</a></li>
             <li><a href="#merch" class="nav-link">Merch</a></li>
         </ul>
-    <!-- Navmenu ends here -->
+        <!-- Navmenu ends here -->
 
-    </nav>
+        </nav>
 
          <!-- fixed social media widget goes here -->
          <section class="hidden md:block top-[43%] md:top-28 right-10 md:right-4 fixed" id="social-menu">
@@ -57,23 +57,22 @@
     <!-- Main Content -->
     <main id="main-content" class="container relative mt-10">
         <!-- Hero section goes here -->
-        <section class="container md:grid grid-cols-2 place-items-center">
+        <section id="home" class="container md:grid grid-cols-2 place-items-center">
             <div class="col-span-1 md:pr-6 lg:pr-0">
                 <img src="images/drwoy.png" alt="hero image" class="hidden md:block shadow lg:w-3/4 object-cover transition animate-pulse">
                 <img src="images/hero.jpg" alt="hero image responsive" class="block md:hidden shadow w-full object-cover transition animate-pulse">
             </div>
 
-            <div class="col-span-1 mt-8 md:mt-0 md:pr-5 text-center font-montserrat">
-
+            <div class="relative col-span-1 mt-8 md:mt-0 md:pr-5 text-center font-montserrat">
                 <h1 class="text-secondary font-bold text-xl md:text-3xl lg:text-5xl uppercase">
 
                     <span class="md:block relative">
-                        <i class="text-light absolute md:-top-12 lg:-top-10 -left-10 lg:-left-16 md:mx-5 bi bi-music-note-beamed transform -rotate-45 transition animate-spin"></i>
+                        <i class="text-light absolute md:-top-12 lg:-top-10 -left-10 lg:-left-16 md:mx-5 bi bi-music-note-beamed transform -rotate-45 transition animate-ping"></i>
                          Now that I'm
                     </span>
 
                     <span class="md:pt-3 md:block relative">a man 
-                        <i class="text-light absolute lg:-bottom-10 lg:right-10 md:ml-7 transition animate-spin bi bi-music-note-beamed transform -rotate-45"></i>
+                        <i class="text-light absolute lg:-bottom-10 lg:right-10 md:ml-7 transition animate-ping bi bi-music-note-beamed transform -rotate-45"></i>
                     </span>
 
                 </h1>
@@ -87,7 +86,7 @@
         </section>
 
         <!-- Music section goes here -->
-        <section class="mt-24 md:mt-32 py-5 container">
+        <section class="mt-24 md:mt-32 py-5 container" id="music">
             <!-- Music header -->
             <div class="font-montserrat rounded my-3 flex flex-col md:flex-row justify-between items-center bg-primary">
                 <h1 class="text-light uppercase pt-3 md:pt-0 mx-5 text-3xl">Music</h1>
@@ -110,7 +109,7 @@
 
 
         <!-- Video section goes here -->
-        <section class="mt-24 pt-5 container">
+        <section class="mt-24 pt-5 container" id="videos">
             <!-- Video header -->
             <div class="font-montserrat rounded my-3 flex flex-col md:flex-row justify-between items-center bg-primary">
                 <h1 class="text-light uppercase pt-3 md:pt-0 mx-5 text-3xl">Video</h1>
@@ -137,7 +136,7 @@
 
         
         
-        <div class="container bg-lime-50 md:w-[95%]">
+        <div class="container bg-lime-50 md:w-[95%]" id="merch">
             <!-- Merch section goes here -->
             <section class="font-montserrat container mt-24 lg:mt-2 pt-16">
                 <h1 class="uppercase text-3xl md:text-5xl text-center border-b-4 border-b-primary text-primary font-medium pb-5">SHOP NEW MERCHANDISE!</h1>
@@ -176,6 +175,12 @@
             </section>
         </div>
 
+        <!-- Move to top -->
+        <div class="cursor-pointer relative mt-10">
+            <a href="#home" class="absolute right-[2%] transform hover:scale-105 hover:opacity-90">
+                <i class="bi bi-arrow-up-circle-fill text-5xl text-light"></i>
+            </a>
+        </div>
     </main>
     <!-- End of Main Content -->
 

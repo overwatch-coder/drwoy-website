@@ -11,11 +11,15 @@
   }
 
 .nav-link{
-    @apply mr-5 text-light uppercase transition duration-300 ease-in-out hover:opacity-80 hover:text-black hover:font-extrabold;
+    @apply mr-5 text-light uppercase transition duration-300 ease-in-out hover:opacity-80 hover:text-black hover:font-extrabold hover:bg-transparent;
 }
 
 .social-icon{
     @apply text-base sm:text-lg md:text-xl text-white md:hover:text-secondary md:hover:opacity-90 hover:text-black;
+}
+
+.active{
+  @apply py-2 px-3 shadow-md bg-light text-primary rounded;
 }
 
 .btn{

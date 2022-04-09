@@ -803,14 +803,6 @@ html {
   z-index: 100;
 }
 
-.-z-50 {
-  z-index: -50;
-}
-
-.z-10 {
-  z-index: 10;
-}
-
 .order-3 {
   order: 3;
 }
@@ -928,10 +920,6 @@ html {
 
 .w-full {
   width: 100%;
-}
-
-.w-1\/2 {
-  width: 50%;
 }
 
 .-rotate-45 {
@@ -1625,6 +1613,10 @@ html {
     flex-direction: column;
   }
 
+  .md\:justify-start {
+    justify-content: flex-start;
+  }
+
   .md\:justify-between {
     justify-content: space-between;
   }
@@ -1753,6 +1745,16 @@ html {
   .lg\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
+  }
+
+  .lg\:text-8xl {
+    font-size: 6rem;
+    line-height: 1;
+  }
+
+  .lg\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
 

@@ -6,6 +6,9 @@ window.addEventListener('DOMContentLoaded', () => {
     let countries = document.querySelector('#country');
     let currentYear = document.querySelector('#date');
     let navLinks = document.querySelectorAll('.nav-link');
+    let newsletter = document.querySelector('#newsletter');
+    let newsletterBtn = document.querySelector('#newsletterBtn');
+    let closeModalBtn = document.querySelector('#closeModalBtn');
 
     // getting current year
     let newDate = new Date();
@@ -58,6 +61,21 @@ window.addEventListener('DOMContentLoaded', () => {
             showOnlyOneActiveElement(merch, music, vid, home);
         }
     });
+
+    // Subscribe Modal Script
+    newsletterBtn.addEventListener('click', ()=>{
+        toggleModal();
+    })
+
+    closeModalBtn.addEventListener('click', ()=>{
+        toggleModal();
+    })
+
+    // function to toggle subscribe modal
+    function toggleModal() {
+        newsletter.classList.toggle('hidden');
+        newsletter.classList.toggle('flex');
+    }
 
     // Youtube lite video on-demand
 

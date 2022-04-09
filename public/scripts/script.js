@@ -5,6 +5,7 @@ window.addEventListener('DOMContentLoaded', () => {
     let socialMenu = document.querySelector('#social-menu');
     let countries = document.querySelector('#country');
     let currentYear = document.querySelector('#date');
+    let navLinks = document.querySelectorAll('.nav-link');
 
     // getting current year
     let newDate = new Date();
@@ -17,7 +18,46 @@ window.addEventListener('DOMContentLoaded', () => {
         ['bi-x-lg', 'text-3xl'].map(item => toogleBtn.classList.toggle(item));
     });
 
-    // add functions
+    // show active class on active nav link
+
+    // destructuring nav links
+    [home, music, vid, merch] = navLinks;
+
+    // actual function to show active element
+    navMenu.addEventListener('click', event =>{
+        let targetedEvent = event.target;
+        if(targetedEvent == home){
+            showOnlyOneActiveElement(home, music, vid, merch);
+        }else if(targetedEvent == music){
+            showOnlyOneActiveElement(music, home, vid, merch);
+        }else if(targetedEvent == vid){
+            showOnlyOneActiveElement(vid, music, home, merch);
+        }else{
+            showOnlyOneActiveElement(merch, music, vid, home);
+        }
+    });
+
+    // show only one active element at a time
+    function showOnlyOneActiveElement(link1, link2, link3, link4){
+        link1.classList.add('active');
+        link2.classList.remove('active');
+        link3.classList.remove('active');
+        link4.classList.remove('active');
+    }
+
+    // show active class on current section on scroll
+    window.addEventListener('scroll', ()=> {
+        let activeHeight = window.scrollY;
+        if(activeHeight <= 660){
+            showOnlyOneActiveElement(home, music, vid, merch);
+        }else if(activeHeight > 667 && activeHeight <= 1080){
+            showOnlyOneActiveElement(music, home, vid, merch);
+        }else if(activeHeight > 1080 && activeHeight <= 2000){
+            showOnlyOneActiveElement(vid, music, home, merch);
+        }else{
+            showOnlyOneActiveElement(merch, music, vid, home);
+        }
+    });
 
     // Youtube lite video on-demand
 

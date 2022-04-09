@@ -11,16 +11,17 @@
   }
 
 .nav-link{
-    @apply mr-5 uppercase hover:text-primary hover:bg-white hover:p-2 transition duration-500 ease-in-out hover:opacity-80 hover:rounded hover:shadow;
+    @apply mr-5 text-light uppercase transition duration-300 ease-in-out hover:opacity-80 hover:text-black hover:font-extrabold;
 }
 
 .social-icon{
-    @apply text-base md:text-xl text-white md:hover:text-secondary md:hover:opacity-90 hover:text-zinc-900;
+    @apply text-base sm:text-lg md:text-xl text-white md:hover:text-secondary md:hover:opacity-90 hover:text-black;
 }
 
 .btn{
     @apply hover:shadow-xl hover:border-2 hover:border-gray-300 focus:outline-none rounded text-light font-normal transition hover:bg-primary;
 }
+
 
 .form-focus{
   @apply rounded focus:border-primary focus:border-2 focus:ring-0 focus:outline-none;
@@ -60,6 +61,7 @@
     border: none;
     height: auto;
     cursor: pointer;
+    object-fit: contain;
     -webkit-transition: 0.4s all;
     -moz-transition: 0.4s all;
     transition: 0.4s all;

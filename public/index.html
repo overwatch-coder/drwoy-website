@@ -33,19 +33,19 @@
             </div>
 
             <!-- Navmenu starts here -->
-            <ul class="hidden relative bg-primary py-3 pl-8 mr-6 flex-col tracking-widest leading-10 w-full h-[300px] md:flex md:flex-row md:justify-end md:py-0 md:pl-0 md:h-auto" id="nav-menu">
+            <ul class="hidden relative bg-primary py-3 pl-8 mr-6 flex-col tracking-widest leading-10 w-full h-[330px] md:flex md:flex-row md:justify-end md:py-0 md:pl-0 md:h-auto" id="nav-menu">
                 <li><a href="#home" class="nav-link active">Home</a></li>
                 <li><a href="#music" class="nav-link">Music</a></li>
                 <li><a href="#videos" class="nav-link">Videos</a></li>
                 <li><a href="#merch" class="nav-link">Merch</a></li>
-                <span class="py-2 md:py-1 cursor-pointer px-4 rounded-full text-light hover:text-primary bg-black hover:bg-gray-100" id="newsletterBtn">Newsletter</span>
+                <p class="py-1 inline-block mt-4 cursor-pointer px-4 rounded-full text-light bg-black hover:text-primary hover:bg-gray-100 md:py-1 md:mt-0" id="newsletterBtn">Newsletter</p>
 
                 <div class="absolute top-5 right-20 md:hidden">
                     <i class="bi text-black animate-ping bi-music-note-beamed text-9xl"></i>
                 </div>
 
                 <!-- fixed social media widget goes here -->
-                <section class="hidden fixed top-[60%] md:top-28 md:right-4 md:block" id="social-menu">
+                <section class="hidden fixed top-[65%] md:top-28 md:right-4 md:block" id="social-menu">
                     <div class="flex md:flex-col gap-5">
                         <a href="#" target="_blank"><i class="social-icon bi bi-tiktok"></i></a>
                         <a href="#" target="_blank"><i class="social-icon bi bi-facebook"></i></a>
@@ -68,7 +68,7 @@
     <!-- Main Content -->
     <main id="main-content" class="container relative mt-10">       
         <!-- Hero section goes here -->
-        <section id="home" class="container md:grid grid-cols-2 place-items-center">
+        <section id="home" class="container flex-shrink-0 grid-cols-2 place-items-center md:grid">
             <div class="col-span-1 md:pr-6 lg:pr-0">
                 <img src="images/drwoy.png" alt="hero image" class="hidden md:block shadow lg:w-3/4 object-cover transition animate-pulse">
                 <img src="images/hero.jpg" alt="hero image responsive" class="block md:hidden shadow w-full object-cover transition animate-pulse">
@@ -223,10 +223,10 @@
                             <div class="mt-4">
                                 <label for="country">Country</label>
                                 <select name="country" id="country" class="form-select form-focus mt-4 px-3 py-3 w-full">
-                                    <option value="">Select your country</option>
+                                <option value="">Select your country</option>
                                 </select>
                             </div>
-                            <button class="w-full uppercase mt-7 py-3 px-4 text-light bg-primary rounded hover:opacity-95 hover:shadow-lg shadow transition">Submit</button>
+                            <button class="w-full uppercase mt-7 py-3 px-4 text-light bg-primary rounded hover:opacity-95 hover:shadow-lg shadow transition">Subscribe</button>
                         </form>
                     </div>
                 </div>
@@ -247,10 +247,11 @@
     <footer class="bg-primary text-gray-400 py-16 mt-28 bottom-0 w-full">
         <div class="flex flex-col  text-center items-center place-items-center md:flex-row md:text-left md:justify-around">
             <div class="order-3 md:order-1">
+                <h2 class="hidden uppercase font-poppins font-bold text-5xl text-teal-100 mb-3 lg:text-6xl md:block">D Rwoy</h2>
                 <p>&copy; <span id="date"></span> <span class="uppercase">D Rwoy Official</span></p>
                 <a href="#" class="mt-4 block hover:text-light">All Rights Reserved</a>
             </div>
-            <div class="order-2 mt-5 mb-6 font-poppins font-bold text-center uppercase text-6xl md:hidden text-black">D Rwoy</div>
+            <div class="order-2 mt-5 mb-6 text-teal-100 font-poppins font-bold text-center uppercase text-6xl sm:text-7xl md:hidden">D Rwoy</div>
 
             <div class="flex flex-col order-1 md:order-2">
                 <div class="flex flex-row gap-5">
@@ -273,6 +274,10 @@
                     <p class="flex items-center mt-3">
                         <i class="bi bi-telephone text-lg text-light"></i>
                         <span class="ml-2">+212 606-457519</span>
+                    </p>
+                    <p class="flex items-center mt-3">
+                        <i class="bi bi-house-fill text-lg text-light"></i>
+                        <span class="ml-2">Apt 6, Rabat-Maroc</span>
                     </p>
                 </div>
                 

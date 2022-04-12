@@ -105,7 +105,7 @@
 
                 <div>
                     <h1 class="mt-10 md:mt-0 uppercase font-bold text-primary text-4xl md:text-5xl tracking-wide">News and <br> Updates</h1>
-                    <form action="#" method="POST" class="mt-4 pt-4">
+                    <form action="#" method="POST" class="mt-4 pt-4" id="subscribe">
                         <div class="mt-3">
                             <label for="email">Email</label>
                             <input type="email" name="email" id="email" placeholder="Email address" class="mt-4 form-input form-focus w-full peer">
@@ -213,7 +213,7 @@
 
                     <div>
                         <h1 class="mt-10 md:mt-0 uppercase font-bold text-primary text-4xl md:text-5xl xl:text-6xl tracking-wide">News and <br> Updates</h1>
-                        <form action="#" method="POST" class="mt-4 pt-4">
+                        <form action="#" method="POST" class="mt-4 pt-4" id="subscribe">
                             <div class="mt-3">
                                 <label for="email">Email</label>
                                 <input type="email" name="email" id="email" placeholder="Email address" class="mt-4 form-input form-focus w-full peer">
@@ -233,6 +233,31 @@
             <!-- End of News & Update Section -->
             </section>
         </div>
+
+        <!-- Alert for success subscription -->
+         <!-- Modal -->
+         <div id="success-message" class="hidden fixed container w-1/2 h-auto justify-center items-center bg-light top-[56%] right-1/2 left-1/2 transition-all delay-500 duration-500 transform -translate-x-1/2 -translate-y-1/2 z-20 py-14 rounded-md shadow-md shadow-purple-300">
+            <div class="relative">
+                <div class="text-center">
+                    <h2  class="text-3xl">Thank you for subscribing!</h2>
+                    <p class="mt-5"><i class="text-green-500 text-7xl bi bi-check-circle"></i></p>
+                </div>
+            </div>
+        </div>
+        <!-- End of Modal -->
+
+         <!-- Alert for Failure to subscribe -->
+         <!-- Modal -->
+         <div id="fail-message" class="hidden fixed container w-1/2 h-auto justify-center items-center bg-light top-[56%] right-1/2 left-1/2 transition-all delay-500 duration-500 transform -translate-x-1/2 -translate-y-1/2 z-20 py-14 rounded-md shadow-md shadow-purple-300">
+            <div class="relative">
+                <div class="text-center">
+                    <h2  class="text-3xl">Sorry, something went wrong <br> Please try again!</h2>
+                    <p class="mt-5"><i class="text-red-600 text-7xl bi bi-x-circle"></i></p>
+                </div>
+            </div>
+        </div>
+        <!-- End of Modal -->
+
 
         <!-- Move to top -->
         <div class="cursor-pointer relative mt-10">
@@ -273,7 +298,7 @@
 
                     <p class="flex items-center mt-3">
                         <i class="bi bi-telephone text-lg text-light"></i>
-                        <span class="ml-2">+212 606-457519</span>
+                        <span class="ml-2">+212 606-457-519</span>
                     </p>
                     <p class="flex items-center mt-3">
                         <i class="bi bi-house-fill text-lg text-light"></i>
@@ -295,6 +320,7 @@
 
     <!-- Scripts -->
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="/public/scripts/script.js"></script>
 </body>
 </html>

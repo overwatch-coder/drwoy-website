@@ -191,8 +191,6 @@ window.addEventListener('DOMContentLoaded', () => {
                 <p><span style="font-size: 14pt;">Best wishes,</span></p>
                 <p><span style="font-size: 14pt;">Official D Rwoy</span></p>`
             }).then( ()=> {
-                 successOrFailed(success);
-
                 //  Auto Reply
                 Email.send({
                     SecureToken: '0864ce99-04c4-41d4-bef3-b1d9695f183d',
@@ -207,26 +205,33 @@ window.addEventListener('DOMContentLoaded', () => {
                     <p><span style="font-size: 14pt;">Official D Rwoy</span></p>`
                 });
 
-                // return to homepage
-                location.href = 'index.html';
+                successOrFailed(success);
+
+                setTimeout(() => {
+                    // return to homepage
+                    location.href = 'index.html';
+               }, 2000);
             }) 
             //if there's any error
             .catch(()=>{
                 successOrFailed(errorMessage);
+                setTimeout(() => {
+                    // return to homepage
+                    location.href = 'index.html';
+               }, 2000);
             })
         }else{
             successOrFailed(errorMessage);
+            setTimeout(() => {
+                // return to homepage
+                location.href = 'index.html';
+           }, 2000);
         }
     });
 
     // get success or failed message to display
     const successOrFailed = (item)=>{
-        setTimeout(() => {
-            item.classList.remove('hidden');
-       }, 2000);
-        setTimeout(() => {
-            item.classList.add('hidden');
-       }, 2000);
+        item.classList.remove('hidden');
     }
 
 

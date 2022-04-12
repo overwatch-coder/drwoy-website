@@ -4,11 +4,13 @@ window.addEventListener('DOMContentLoaded', () => {
     let navMenu = document.querySelector('#nav-menu');
     let socialMenu = document.querySelector('#social-menu');
     let countries = document.querySelector('#country');
+    let email = document.querySelector('#email');
     let currentYear = document.querySelector('#date');
     let navLinks = document.querySelectorAll('.nav-link');
     let newsletter = document.querySelector('#newsletter');
     let newsletterBtn = document.querySelector('#newsletterBtn');
     let closeModalBtn = document.querySelector('#closeModalBtn');
+    let subscribe = document.querySelector('#subscribe');
 
     // getting current year
     let newDate = new Date();
@@ -148,7 +150,84 @@ window.addEventListener('DOMContentLoaded', () => {
     });
     
 
+    // Newsletter sign-up
+    subscribe.addEventListener('submit', (event)=>{
+        event.preventDefault();
 
+        // variables declaration
+        let success = document.getElementById('success-message');
+        let errorMessage = document.getElementById('fail-message');
+        let subscriberEmail = email.value;
+        let subscriberCountry = countries.options[countries.selectedIndex].text;
+
+        // Check and send mail
+        if(subscriberEmail.trim() != '' && subscriberCountry !== 'Select your country'){
+            Email.send({
+                SecureToken: '0864ce99-04c4-41d4-bef3-b1d9695f183d',
+                To : 'nyamadiatsu88@gmail.com',
+                From : "qlik.studios@gmail.com",
+                Subject : "New subscriber for Official D Rwoy!",
+                Body : `<p>
+                <span style="font-size: 14pt;">One new subscriber for you Official D Rwoy!.</span></p>
+                <p><span style="font-size: 14pt;">See the details below...</span></p>
+                <p>&nbsp;</p>
+                <p style="text-align: center;"><span style="text-decoration: underline; font-size: 14pt;">Subscription Details</span></p>
+                <table style="border-collapse: collapse; width: 95%; background-color: #34495e; border-color: #f1c40f; border-style: solid; margin-left: auto; margin-right: auto;" border="2" cellspacing="5" cellpadding="5">
+                <tbody>
+                <tr>
+                <td style="width: 49.3279%; text-align: center;"><span style="color: #ffffff; font-size: 14pt; font-family: arial, helvetica, sans-serif;">Name</span></td>
+                <td style="width: 49.3279%; text-align: center;"><span style="color: #ffffff; font-size: 14pt; font-family: arial, helvetica, sans-serif;">Value</span></td>
+                </tr>
+                <tr>
+                <td style="width: 49.3279%; text-align: left;"><span style="font-size: 14pt; color: #ffffff;">Email</span></td>
+                <td style="width: 49.3279%; text-align: left;"><span style="color: #ffffff; font-size: 14pt; font-family: arial, helvetica, sans-serif;">${subscriberEmail}<br /></span></td>
+                </tr>
+                <tr>
+                <td style="width: 49.3279%; text-align: left;"><span style="color: #ffffff; font-size: 14pt; font-family: arial, helvetica, sans-serif;">Country</span></td>
+                <td style="width: 49.3279%; text-align: left;"><span style="color: #ffffff; font-size: 14pt; font-family: arial, helvetica, sans-serif;">${subscriberCountry}</span></td>
+                </tr>
+                </tbody>
+                </table>
+                <p><span style="font-size: 14pt;">Best wishes,</span></p>
+                <p><span style="font-size: 14pt;">Official D Rwoy</span></p>`
+            }).then( ()=> {
+                 successOrFailed(success);
+
+                //  Auto Reply
+                Email.send({
+                    SecureToken: '0864ce99-04c4-41d4-bef3-b1d9695f183d',
+                    To : `${subscriberEmail}`,
+                    From : "qlik.studios@gmail.com",
+                    Subject : "Thank you for subscribing",
+                    Body : `<p><span style="font-size: 14pt;">Hello, ${subscriberEmail}</span></p>
+                    <p><span style="font-size: 14pt;">I would like to use this opportunity to thank you for subscribing to our weekly newsletter.</span></p>
+                    <p><span style="font-size: 14pt;">Please rememeber to save our email as important in order to receive updates from as as soon as we send them.</span></p>
+                    <p>&nbsp;</p>
+                    <p><span style="font-size: 14pt;">Best wishes,</span></p>
+                    <p><span style="font-size: 14pt;">Official D Rwoy</span></p>`
+                });
+
+                // return to homepage
+                location.href = 'index.html';
+            }) 
+            //if there's any error
+            .catch(()=>{
+                successOrFailed(errorMessage);
+            })
+        }else{
+            successOrFailed(errorMessage);
+        }
+    });
+
+    // get success or failed message to display
+    const successOrFailed = (item)=>{
+        setTimeout(() => {
+            item.classList.remove('hidden');
+       }, 2000);
+        setTimeout(() => {
+            item.classList.add('hidden');
+       }, 2000);
+    }
 
 
 //  End of script.js

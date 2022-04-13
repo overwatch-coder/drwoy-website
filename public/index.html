@@ -97,28 +97,29 @@
         </section>
 
         <!-- Subscribe Modal -->
-        <div id="newsletter" class="hidden fixed container w-3/4 h-auto justify-center items-center bg-light top-[56%] right-1/2 left-1/2 transition-all delay-500 duration-500 transform -translate-x-1/2 -translate-y-1/2 z-20 py-14 rounded-md shadow-md shadow-purple-300 md:w-1/2">
+        <div id="newsletter" class="hidden fixed container w-3/4 h-auto justify-center items-center bg-light top-[56%] right-1/2 left-1/2 transition-all delay-500 duration-500 transform -translate-x-1/2 -translate-y-1/2 z-20 py-14 rounded-md shadow-md shadow-purple-300 md:w-4/6 lg:w-1/2">
             <div class="relative">
-                <span id="closeModalBtn" class="absolute ml-10 mt-10 right-0 rounded-full cursor-pointer hover:bg-gray-200 md:mt-0">
-                    <i class="bi bi-x-lg h-5 w-5 text-3xl"></i>
+                <span id="closeModalBtn" class="absolute ml-10 mt-10 sm:mt-12 right-0 rounded-full cursor-pointer hover:bg-gray-200 md:mt-0">
+                    <i class="bi bi-x-circle h-5 w-5 text-2xl sm:text-3xl"></i>
                 </span>
 
                 <div>
-                    <h1 class="mt-10 md:mt-0 uppercase font-bold text-primary text-4xl md:text-5xl tracking-wide">News and <br> Updates</h1>
-                    <form action="#" method="POST" class="mt-4 pt-4" id="subscribe">
+                    <h1 class="mt-10 md:mt-0 uppercase font-bold text-primary text-2xl tracking-normal sm:text-3xl md:text-5xl md:tracking-wide">Newsletter</h1>
+                    <p class="text-sm md:text-base mt-5">Join our subscribers list to get the latest news, updates and special offers delivered directly to your inbox</p>
+                    <form action="#" method="POST" class="mt-4 md:pt-4" id="subscribe">
                         <div class="mt-3">
                             <label for="email">Email</label>
-                            <input type="email" name="email" id="email" placeholder="Email address" class="mt-4 form-input form-focus w-full peer">
+                            <input type="email" name="email" id="email" placeholder="Email address" class="mt-2 form-input form-focus w-full peer md:mt-4">
                             <p class="hidden peer-invalid:block peer-invalid:text-red-600 pt-5">Enter valid email address</p>
                         </div>
 
-                        <div class="mt-4">
+                        <div class="mt-2">
                             <label for="country">Country</label>
-                            <select name="country" id="country" class="form-select form-focus mt-4 px-3 py-3 w-full">
+                            <select name="country" id="country" class="form-select form-focus mt-2 px-3 py-3 w-full md:mt-4">
                             <option value="">Select your country</option>
                             </select>
                         </div>
-                        <button class="w-full uppercase mt-7 py-3 px-4 text-light bg-primary rounded hover:opacity-95 hover:shadow-lg shadow transition">Subscribe</button>
+                        <button class="w-full uppercase mt-3  py-3 px-4 text-light bg-primary rounded shadow transition md:mt-7 md:py-3 hover:opacity-95 hover:shadow-lg">Subscribe</button>
                     </form>
                 </div>
             </div>
@@ -213,21 +214,8 @@
 
                     <div>
                         <h1 class="mt-10 md:mt-0 uppercase font-bold text-primary text-4xl md:text-5xl xl:text-6xl tracking-wide">News and <br> Updates</h1>
-                        <form action="#" method="POST" class="mt-4 pt-4" id="subscribe">
-                            <div class="mt-3">
-                                <label for="email">Email</label>
-                                <input type="email" name="email" id="email" placeholder="Email address" class="mt-4 form-input form-focus w-full peer">
-                                <p class="hidden peer-invalid:block peer-invalid:text-red-600 pt-5">Enter valid email address</p>
-                            </div>
-
-                            <div class="mt-4">
-                                <label for="country">Country</label>
-                                <select name="country" id="country" class="form-select form-focus mt-4 px-3 py-3 w-full">
-                                <option value="">Select your country</option>
-                                </select>
-                            </div>
-                            <button class="w-full uppercase mt-7 py-3 px-4 text-light bg-primary rounded hover:opacity-95 hover:shadow-lg shadow transition">Subscribe</button>
-                        </form>
+                        <p class="text-lg mt-4">Join our subscribers list to get the latest news, updates and special offers delivered directly to your inbox.</p>
+                        <button class="text-lg mt-4 p-3 w-full bg-primary text-light rounded-lg shaodw-lg hover:bg-secondary hover:shadow-2xl transition-all" id="subscribeBtn">Click to Subscribe</button>
                     </div>
                 </div>
             <!-- End of News & Update Section -->

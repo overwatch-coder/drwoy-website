@@ -177,29 +177,21 @@ window.addEventListener('DOMContentLoaded', () => {
                 To : 'nyamadiatsu88@gmail.com',
                 From : "qlik.studios@gmail.com",
                 Subject : "New subscriber for Official D Rwoy!",
-                Body : `<p>
-                <span style="font-size: 14pt;">One new subscriber for you Official D Rwoy!.</span></p>
-                <p><span style="font-size: 14pt;">See the details below...</span></p>
-                <p>&nbsp;</p>
-                <p style="text-align: center;"><span style="text-decoration: underline; font-size: 14pt;">Subscription Details</span></p>
-                <table style="border-collapse: collapse; width: 95%; background-color: #34495e; border-color: #f1c40f; border-style: solid; margin-left: auto; margin-right: auto;" border="2" cellspacing="5" cellpadding="5">
-                <tbody>
-                <tr>
-                <td style="width: 49.3279%; text-align: center;"><span style="color: #ffffff; font-size: 14pt; font-family: arial, helvetica, sans-serif;">Name</span></td>
-                <td style="width: 49.3279%; text-align: center;"><span style="color: #ffffff; font-size: 14pt; font-family: arial, helvetica, sans-serif;">Value</span></td>
-                </tr>
-                <tr>
-                <td style="width: 49.3279%; text-align: left;"><span style="font-size: 14pt; color: #ffffff;">Email</span></td>
-                <td style="width: 49.3279%; text-align: left;"><span style="color: #ffffff; font-size: 14pt; font-family: arial, helvetica, sans-serif;">${subscriberEmail}<br /></span></td>
-                </tr>
-                <tr>
-                <td style="width: 49.3279%; text-align: left;"><span style="color: #ffffff; font-size: 14pt; font-family: arial, helvetica, sans-serif;">Country</span></td>
-                <td style="width: 49.3279%; text-align: left;"><span style="color: #ffffff; font-size: 14pt; font-family: arial, helvetica, sans-serif;">${subscriberCountry}</span></td>
-                </tr>
-                </tbody>
-                </table>
-                <p><span style="font-size: 14pt;">Best wishes,</span></p>
-                <p><span style="font-size: 14pt;">Official D Rwoy</span></p>`
+                Body : 
+                `<div>
+                    <p style="font-size: 22px;">
+                        Hello 
+                        <span style="color: purple; font-weight: bold;">D Rwoy,</span>
+                    </p>
+                    <p style="font-size: 20px; margin-top: 10px;">A new user with just joined your mailing list.</p>
+                    <p style="font-size: 20px; margin-top: 10px;">See below for the details of your new subscriber</p>
+                    <p style="font-size: 18px; margin-top: 10px;">
+                        Email: ${subscriberEmail}
+                        <br>
+                        Country: ${subscriberCountry}
+                    </p>
+                    <p style="font-size: 20px; margin-top: 10px;">Best Regards, <br> Official D Rwoy Newsletter</p>
+                </div>`
             }).then( ()=> {
                 //  Auto Reply
                 Email.send({

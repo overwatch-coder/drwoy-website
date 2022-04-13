@@ -11,6 +11,7 @@ window.addEventListener('DOMContentLoaded', () => {
     let newsletterBtn = document.querySelector('#newsletterBtn');
     let closeModalBtn = document.querySelector('#closeModalBtn');
     let subscribe = document.querySelector('#subscribe');
+    let subscribeBtn = document.querySelector('#subscribeBtn');
 
     // getting current year
     let newDate = new Date();
@@ -64,20 +65,29 @@ window.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Subscribe Modal Script
-    newsletterBtn.addEventListener('click', ()=>{
-        toggleModal();
-    })
-
-    closeModalBtn.addEventListener('click', ()=>{
-        toggleModal();
-    })
+    // Writing script to display or hide newsletter page
 
     // function to toggle subscribe modal
-    function toggleModal() {
+    const toggleModal = ()=>{
         newsletter.classList.toggle('hidden');
         newsletter.classList.toggle('flex');
     }
+    
+    // function to select any button which is clicked
+    const clickModalToggle = (btnToClick)=>{
+        btnToClick.addEventListener('click', ()=>{
+            toggleModal();
+        })
+    }
+
+    // calling click to toggle modal function
+    clickModalToggle(newsletterBtn);
+    clickModalToggle(subscribeBtn);
+
+     // function close the modal on clicking close button
+     closeModalBtn.addEventListener('click', ()=>{
+        toggleModal();
+    })
 
     // Youtube lite video on-demand
 
@@ -206,7 +216,6 @@ window.addEventListener('DOMContentLoaded', () => {
                 });
 
                 successOrFailed(success);
-
                 setTimeout(() => {
                     // return to homepage
                     location.href = 'index.html';

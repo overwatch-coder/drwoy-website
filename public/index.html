@@ -69,7 +69,7 @@
     <main id="main-content" class="container relative mt-10">     
         <!-- Hero section goes here -->
         <section id="home" class="container flex-shrink-0 grid-cols-2 place-items-center md:grid">
-            <div class="col-span-1 md:pr-6 lg:pr-0">
+            <div class="col-span-1 md:pr-6 lg:pr-0 animate-pulse">
                 <img src="images/drwoy.png" alt="hero image" class="hidden md:block shadow lg:w-3/4 object-cover transition">
                 <img src="images/hero.jpg" alt="hero image responsive" class="block md:hidden shadow w-full object-cover transition">
             </div>
@@ -119,7 +119,7 @@
                             <option value="">Select your country</option>
                             </select>
                         </div>
-                        <button class="w-full uppercase mt-3  py-3 px-4 text-light bg-primary rounded shadow transition md:mt-7 md:py-3 hover:opacity-95 hover:shadow-lg">Subscribe</button>
+                        <button class="w-full uppercase mt-3  py-3 px-4 text-light bg-primary rounded shadow transition md:mt-7 md:py-3 hover:opacity-95 hover:shadow-lg hover:bg-secondary">Subscribe</button>
                     </form>
                 </div>
             </div>
@@ -259,13 +259,13 @@
 
     <!-- Footer -->
     <footer class="bg-primary text-gray-400 py-16 mt-28 bottom-0 w-full">
-        <div class="flex flex-col  text-center items-center place-items-center md:flex-row md:text-left md:justify-around">
+        <div class="flex flex-col text-left px-12 md:items-center md:place-items-center md:flex-row md:justify-around">
             <div class="order-3 md:order-1">
-                <h2 class="hidden uppercase font-poppins font-bold text-5xl text-teal-100 mb-3 lg:text-6xl md:block">D Rwoy</h2>
-                <p>&copy; <span id="date"></span> <span class="uppercase">D Rwoy Official</span></p>
-                <a href="#" class="mt-4 block hover:text-light">All Rights Reserved</a>
+                <h2 class="hidden uppercase font-poppins font-bold text-sm md:text-5xl text-teal-100 mb-3 lg:text-6xl md:block">D Rwoy</h2>
+                <p>Copyright &copy; <span id="date"></span> <span class="uppercase">Official D Rwoy</span></p>
+                <a href="#" class="text-sm mt-4 block hover:text-light">All Rights Reserved</a>
             </div>
-            <div class="order-2 mt-5 mb-6 text-teal-100 font-poppins font-bold text-center uppercase text-6xl sm:text-7xl md:hidden">D Rwoy</div>
+            <div class="order-2 mt-5 mb-6 text-teal-100 font-poppins font-bold uppercase text-5xl sm:text-7xl md:hidden">D Rwoy</div> 
 
             <div class="flex flex-col order-1 md:order-2">
                 <div class="flex flex-row gap-5">
@@ -281,16 +281,16 @@
 
                 <div class="mb-8 md:mb-1">
                     <p class="flex items-center mt-5">
-                        <i class="bi bi-envelope text-lg text-light"></i>
+                        <i class="bi bi-envelope text-sm text-light"></i>
                         <span class="ml-2">officialdrwoy@gmail.com</span>
                     </p>
 
                     <p class="flex items-center mt-3">
-                        <i class="bi bi-telephone text-lg text-light"></i>
+                        <i class="bi bi-telephone text-sm text-light"></i>
                         <span class="ml-2">+212 606-457-519</span>
                     </p>
                     <p class="flex items-center mt-3">
-                        <i class="bi bi-house-fill text-lg text-light"></i>
+                        <i class="bi bi-house-fill text-sm text-light"></i>
                         <span class="ml-2">Apt 6, Rabat-Maroc</span>
                     </p>
                 </div>
@@ -300,8 +300,8 @@
             </div>
 
             <div class="order-3">
-                <a href="#" class="block mt-4 md:mt-0 hover:text-light">Privacy Policies</a>
-                <a href="#" class="mt-4 block hover:text-light">Terms and Conditions</a>
+                <a href="#" class="block text-sm mt-4 md:mt-0 hover:text-light">Privacy Policies</a>
+                <a href="#" class="mt-4 block text-sm hover:text-light">Terms and Conditions</a>
             </div>
         </div>
     </footer>

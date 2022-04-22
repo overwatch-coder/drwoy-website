@@ -19,7 +19,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     // display or hide nav menu
     toogleBtn.addEventListener('click', ()=> {
-        navMenu.classList.toggle('hidden');
+        ['-translate-x-[99.99%]', '-translate-y-[99.99%]'].map(item => navMenu.classList.toggle(item));
         socialMenu.classList.toggle('hidden');
         ['bi-x-lg', 'text-3xl'].map(item => toogleBtn.classList.toggle(item));
     });

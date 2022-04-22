@@ -19,9 +19,7 @@
                 <!-- Logo goes here -->
                  <div class="ml-6 md:ml-2 lg:ml-16 flex justify-start items-center" id="logo">
                     <img src="images/logo.svg" alt="D Rwoy logo" class="w-10 object-contain">
-                    <a href="index.html" class="text-white text-4xl ml-3 font-poppins font-semibold">
-                        D Rwoy
-                    </a>
+                    <a href="index.html" class="text-white text-4xl ml-3 font-poppins font-semibold">D Rwoy</a>
                 </div>
                 <!-- End of logo -->
 
@@ -33,7 +31,7 @@
             </div>
 
             <!-- Navmenu starts here -->
-            <ul class="hidden relative bg-primary py-3 pl-8 mr-6 flex-col tracking-widest leading-10 w-full h-[330px] md:flex md:flex-row md:justify-end md:py-0 md:pl-0 md:h-auto" id="nav-menu">
+            <ul class="absolute md:relative nav-menu transform -translate-x-[99.99%] -translate-y-[99.99%] md:-translate-x-0 md:-translate-y-0" id="nav-menu">
                 <li><a href="#home" class="nav-link active">Home</a></li>
                 <li><a href="#music" class="nav-link">Music</a></li>
                 <li><a href="#videos" class="nav-link">Videos</a></li>
@@ -41,11 +39,11 @@
                 <p class="py-1 inline-block mt-4 cursor-pointer px-4 rounded-md md:rounded-full text-light bg-black hover:text-primary hover:bg-gray-100 md:py-1 md:mt-0" id="newsletterBtn">Newsletter</p>
 
                 <div class="absolute top-5 right-20 md:hidden">
-                    <i class="bi text-black animate-ping bi-music-note-beamed text-9xl"></i>
+                    <i class="bi text-black animate-pulse bi-music-note-beamed text-9xl"></i>
                 </div>
 
                 <!-- fixed social media widget goes here -->
-                <section class="hidden fixed top-[67%] md:top-28 md:right-4 md:block" id="social-menu">
+                <section class="hidden fixed top-[82%] md:top-28 md:right-4 md:block" id="social-menu">
                     <div class="flex md:flex-col gap-5">
                         <a href="#" target="_blank"><i class="social-icon bi bi-tiktok"></i></a>
                         <a href="#" target="_blank"><i class="social-icon bi bi-facebook"></i></a>
@@ -66,9 +64,9 @@
     <!-- End of header -->
 
     <!-- design -->
-    <div class="fixed inset-0 bg-gradient-to-t from-purple-300 to-gray-500 rounded-full h-96 w-96 opacity-10 blur-2xl -left-[200px] animate-spin transition"></div>
+    <div class="fixed inset-0 bg-gradient-to-t from-purple-300 to-gray-500 rounded-full h-96 w-96 opacity-10 blur-xl -left-[200px] animate-spin transition"></div>
 
-    <div class="fixed inset-0 bg-gradient-to-t from-purple-300 to-gray-500 rounded-full h-96 w-96 opacity-10 blur-2xl animate-spin left-[80%]"></div>
+    <div class="fixed inset-0 bg-gradient-to-t from-purple-300 to-gray-500 rounded-full h-96 w-96 opacity-10 blur-xl animate-spin left-[80%]"></div>
 
     <div class="fixed inset-0 bg-gradient-to-t from-purple-300 to-gray-700 rounded-full h-96 w-96 opacity-5 blur-2xl animate-pulse top-1/2 left-1/2 right-1/2 transform -translate-x-1/2 translate-y-1/2"></div>
      <!-- design end-->
@@ -77,7 +75,7 @@
     <main id="main-content" class="md:container relative mt-10">     
         <!-- Hero section goes here -->
         <section id="home" class="container flex-shrink-0 grid-cols-2 place-items-center md:grid">
-            <div class="col-span-1 md:pr-6 lg:pr-0 animate-pulse">
+            <div class="col-span-1 md:pr-6 lg:pr-0">
                 <img src="images/drwoy.png" alt="hero image" class="hidden md:block shadow lg:w-3/4 object-cover transition">
                 <img src="images/hero.jpg" alt="hero image responsive" class="block md:hidden shadow w-full object-cover transition">
             </div>
@@ -203,7 +201,7 @@
 
         
         
-        <div class="container bg-lime-50 md:w-[95%]" id="merch">
+        <div class="container bg-lime-50 md:w-[93%]" id="merch">
             <!-- Merch section goes here -->
             <section class="font-montserrat container mt-24 lg:mt-2 pt-16">
                 <h1 class="uppercase text-3xl md:text-5xl text-center border-b-4 border-b-primary text-primary font-medium pb-5">SHOP NEW MERCHANDISE!</h1>
@@ -258,7 +256,7 @@
 
         <!-- Move to top -->
         <div class="cursor-pointer relative mt-10">
-            <a href="#home" class="absolute right-[2%] transform hover:scale-105 hover:opacity-90">
+            <a href="#home" class="absolute right-[5%] transform hover:scale-105 hover:opacity-90">
                 <i class="bi bi-arrow-up-circle-fill text-5xl text-light"></i>
             </a>
         </div>

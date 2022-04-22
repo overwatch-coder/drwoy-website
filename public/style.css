@@ -826,16 +826,12 @@ html {
   top: 56%;
 }
 
-.right-\[2\%\] {
-  right: 2%;
+.right-\[5\%\] {
+  right: 5%;
 }
 
 .bottom-0 {
   bottom: 0px;
-}
-
-.right-\[5\%\] {
-  right: 5%;
 }
 
 .z-\[100\] {
@@ -991,6 +987,22 @@ html {
 
 .h-5 {
   height: 1.25rem;
+}
+
+.h-\[\] {
+  height: ;
+}
+
+.h-\[90\] {
+  height: 90;
+}
+
+.h-\[90\%\] {
+  height: 90%;
+}
+
+.h-\[70\%\] {
+  height: 70%;
 }
 
 .w-full {
@@ -1677,7 +1689,7 @@ html {
   transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
-  transition-duration: 1000ms;
+  transition-duration: 500ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -2083,14 +2095,6 @@ html {
 
   .md\:w-4\/6 {
     width: 66.666667%;
-  }
-
-  .md\:w-\[95\%\] {
-    width: 95%;
-  }
-
-  .md\:w-\[90\%\] {
-    width: 90%;
   }
 
   .md\:w-\[93\%\] {

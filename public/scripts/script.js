@@ -69,7 +69,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     // function to toggle subscribe modal
     const toggleModal = ()=>{
-        newsletter.classList.toggle('hidden');
+        newsletter.classList.toggle('scale-100');
         newsletter.classList.toggle('flex');
     }
     

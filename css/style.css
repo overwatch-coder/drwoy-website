@@ -16,7 +16,7 @@
 
 
 .nav-link{
-    @apply text-sm mr-5 text-light uppercase transition duration-1000 ease-in-out lg:text-base hover:opacity-80 hover:text-black hover:font-extrabold hover:bg-transparent;
+    @apply text-sm mr-5 text-light uppercase transition duration-500 ease-in-out lg:text-base hover:opacity-80 hover:text-black hover:font-extrabold hover:bg-transparent;
 }
 
 .social-icon{

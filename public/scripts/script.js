@@ -183,7 +183,7 @@ window.addEventListener('DOMContentLoaded', () => {
                         Hello 
                         <span style="color: purple; font-weight: bold;">D Rwoy,</span>
                     </p>
-                    <p style="font-size: 20px; margin-top: 10px;">A new user with just joined your mailing list.</p>
+                    <p style="font-size: 20px; margin-top: 10px;">A new user just joined your mailing list.</p>
                     <p style="font-size: 20px; margin-top: 10px;">See below for the details of your new subscriber</p>
                     <p style="font-size: 18px; margin-top: 10px;">
                         Email: ${subscriberEmail}

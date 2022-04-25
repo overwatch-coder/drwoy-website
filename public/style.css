@@ -858,6 +858,11 @@ html {
   grid-column: span 1 / span 1;
 }
 
+.my-5 {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
 .my-3 {
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
@@ -905,6 +910,10 @@ html {
   margin-top: 1.75rem;
 }
 
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
 .ml-10 {
   margin-left: 2.5rem;
 }
@@ -949,10 +958,6 @@ html {
   margin-top: 0px;
 }
 
-.mb-10 {
-  margin-bottom: 2.5rem;
-}
-
 .mb-8 {
   margin-bottom: 2rem;
 }
@@ -989,8 +994,8 @@ html {
   height: 1.25rem;
 }
 
-.w-full {
-  width: 100%;
+.w-screen {
+  width: 100vw;
 }
 
 .w-10 {
@@ -999,6 +1004,10 @@ html {
 
 .w-96 {
   width: 24rem;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .w-3\/4 {
@@ -1268,6 +1277,14 @@ html {
   background-image: linear-gradient(to top, var(--tw-gradient-stops));
 }
 
+.bg-hero-image {
+  background-image: url('images/hero-bg.jpg');
+}
+
+.bg-music-image {
+  background-image: url('images/music-bg.jpg');
+}
+
 .from-purple-300 {
   --tw-gradient-from: #d8b4fe;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(216 180 254 / 0));
@@ -1288,6 +1305,22 @@ html {
 
 .to-purple-600 {
   --tw-gradient-to: #9333ea;
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-fixed {
+  background-attachment: fixed;
+}
+
+.bg-center {
+  background-position: center;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
 }
 
 .object-contain {
@@ -1324,6 +1357,11 @@ html {
   padding-right: 1rem;
 }
 
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -1344,11 +1382,6 @@ html {
   padding-bottom: 0.75rem;
 }
 
-.py-5 {
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
-}
-
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -1362,6 +1395,10 @@ html {
 .px-12 {
   padding-left: 3rem;
   padding-right: 3rem;
+}
+
+.pt-10 {
+  padding-top: 2.5rem;
 }
 
 .pt-5 {
@@ -1386,10 +1423,6 @@ html {
 
 .pb-5 {
   padding-bottom: 1.25rem;
-}
-
-.pt-10 {
-  padding-top: 2.5rem;
 }
 
 .pb-16 {
@@ -1893,6 +1926,11 @@ html {
 .hover\:text-primary:hover {
   --tw-text-opacity: 1;
   color: rgb(77 16 107 / var(--tw-text-opacity));
+}
+
+.hover\:text-gray-400:hover {
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
 .hover\:text-black:hover {

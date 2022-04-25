@@ -15,7 +15,7 @@
     <!-- Header -->
     <header class="sticky top-0 z-[100]">
         <nav id="nav" class="md:flex justify-between items-center md:bg-primary">
-            <div class="bg-primary w-full py-8 md:py-3">
+            <div class="bg-primary w-screen py-8 md:py-3">
                 <!-- Logo goes here -->
                  <div class="ml-6 md:ml-2 lg:ml-16 flex justify-start items-center" id="logo">
                     <img src="images/logo.svg" alt="D Rwoy logo" class="w-10 object-contain">
@@ -45,14 +45,14 @@
                 <!-- fixed social media widget goes here -->
                 <section class="hidden fixed top-[82%] md:top-28 md:right-4 md:block" id="social-menu">
                     <div class="flex md:flex-col gap-5">
-                        <a href="https://tiktok.com/@officialdrwoy" target="_blank"><i class="hover:text-gray-900 social-icon bi bi-tiktok"></i></a>
-                        <a href="https://m.facebook.com/officialdrwoy" target="_blank"><i class="hover:text-gray-900 social-icon bi bi-facebook"></i></a>
-                        <a href="https://t.snapchat.com/pxy0VjKy" target="_blank"><i class="hover:text-gray-900 social-icon bi bi-snapchat"></i></a>
-                        <a href="https://instagram.com/Officialdrwoy" target="_blank"><i class="hover:text-gray-900 social-icon bi bi-instagram"></i></a>
-                        <a href="https://music.apple.com/us/artist/danny-musique/1575023181" target="_blank"><i class="hover:text-gray-900 social-icon bi bi-music-note-beamed"></i></a>
-                        <a href="https://open.spotify.com/artist/46BWKg5bywuLNSZArFrvfO" target="_blank"><i class="hover:text-gray-900 social-icon bi bi-spotify"></i></a>
-                        <a href="https://twitter.com/officialdrwoy" target="_blank"><i class="hover:text-gray-900 social-icon bi bi-twitter"></i></a>
-                        <a href="https://www.youtube.com/c/DannyMusique" target="_blank"><i class="hover:text-gray-900 social-icon bi bi-youtube"></i></a>
+                        <a href="https://tiktok.com/@officialdrwoy" target="_blank"><i class="hover:text-gray-400 social-icon bi bi-tiktok"></i></a>
+                        <a href="https://m.facebook.com/officialdrwoy" target="_blank"><i class="hover:text-gray-400 social-icon bi bi-facebook"></i></a>
+                        <a href="https://t.snapchat.com/pxy0VjKy" target="_blank"><i class="hover:text-gray-400 social-icon bi bi-snapchat"></i></a>
+                        <a href="https://instagram.com/Officialdrwoy" target="_blank"><i class="hover:text-gray-400 social-icon bi bi-instagram"></i></a>
+                        <a href="https://music.apple.com/us/artist/danny-musique/1575023181" target="_blank"><i class="hover:text-gray-400 social-icon bi bi-music-note-beamed"></i></a>
+                        <a href="https://open.spotify.com/artist/46BWKg5bywuLNSZArFrvfO" target="_blank"><i class="hover:text-gray-400 social-icon bi bi-spotify"></i></a>
+                        <a href="https://twitter.com/officialdrwoy" target="_blank"><i class="hover:text-gray-400 social-icon bi bi-twitter"></i></a>
+                        <a href="https://www.youtube.com/c/DannyMusique" target="_blank"><i class="hover:text-gray-400 social-icon bi bi-youtube"></i></a>
                     </div>
                 </section>
             </ul>
@@ -74,11 +74,11 @@
     <!-- Main Content -->
     <main id="main-content" class="md:container relative mt-10">     
         <!-- Hero section goes here -->
-        <section id="home" class="container flex-shrink-0 grid-cols-2 place-items-center md:grid">
-            <a href="https://linktr.ee/drwoy" target="_blank">
-                <div class="col-span-1 md:pr-6 lg:pr-0">
-                    <img src="images/drwoy.png" alt="hero image" class="hidden md:block shadow lg:w-3/4 object-cover transition">
-                    <img src="images/hero.jpg" alt="hero image responsive" class="block md:hidden shadow w-full object-cover transition">
+        <section id="home" class="container flex-shrink-0 grid-cols-2 place-items-center md:grid bg-hero-image bg-no-repeat bg-cover bg-center bg-fixed">
+            <a href="https://linktr.ee/drwoy" target="_blank" class="my-5 py-5">
+                <div class="col-span-1 md:mt-0 md:pr-6 lg:pr-0">
+                    <img src="images/drwoy.png" alt="hero image" class="hidden md:block shadow lg:w-3/4 object-cover rounded-md">
+                    <img src="images/hero.jpg" alt="hero image responsive" class="block pt-10 md:hidden shadow w-full object-cover rounded-md">
                 </div>
 
                 <div class="relative col-span-1 mt-8 md:mt-0 md:pr-5 text-center font-montserrat">
@@ -95,9 +95,9 @@
                         
                     </h1>
                     
-                    <p class="uppercase text-light text-4xl md:text-xl lg:text-base mt-5 font-bold">Available Now!</p>
+                    <p class="uppercase text-light text-4xl md:text-xl lg:text-base mt-5 font-bold animate-bounce">Available Now!</p>
                     
-                    <button class="hover:after:content-['🎵'] btn bg-secondary mt-7 px-6 py-2">
+                    <button class="hover:after:content-['🎵'] btn bg-secondary mt-7 px-6 py-2 mb-10">
                         <a href="https://linktr.ee/drwoy" target="_blank" class="uppercase">Listen</a>
                     </button>
                 </div> 
@@ -136,7 +136,7 @@
 
 
         <!-- Music section goes here -->
-        <section class="mt-24 md:mt-32 py-5 container" id="music">
+        <section class="mt-24 md:mt-32 py-5 container bg-music-image bg-no-repeat bg-cover bg-center bg-fixed" id="music">
             <!-- Music header -->
             <div class="font-montserrat rounded my-3 flex flex-col md:flex-row justify-between items-center bg-primary">
                 <h1 class="text-light uppercase pt-3 md:pt-0 mx-5 text-3xl">Music</h1>

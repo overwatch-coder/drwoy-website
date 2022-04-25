@@ -4,6 +4,8 @@ module.exports = {
     extend: {
       backgroundImage: {
         'black-shade': 'linear-gradient(180deg, #302E2E 0%, #242323 9%, #292424 68%, #312E2E 100%)',
+        'music-image': "url('images/music-bg.jpg')",
+        'hero-image': "url('images/hero-bg.jpg')",
       },
       colors: {
         'primary': '#4D106B',

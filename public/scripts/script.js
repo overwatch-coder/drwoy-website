@@ -12,6 +12,8 @@ window.addEventListener('DOMContentLoaded', () => {
     let closeModalBtn = document.querySelector('#closeModalBtn');
     let subscribe = document.querySelector('#subscribe');
     let subscribeBtn = document.querySelector('#subscribeBtn');
+    let mainContent = document.querySelector('#main-content');
+
 
     // getting current year
     let newDate = new Date();
@@ -174,7 +176,7 @@ window.addEventListener('DOMContentLoaded', () => {
         if(subscriberEmail.trim() != '' && subscriberCountry !== 'Select your country'){
             Email.send({
                 SecureToken: '0864ce99-04c4-41d4-bef3-b1d9695f183d',
-                To : 'nyamadiatsu88@gmail.com',
+                To : 'devbrainy98@gmail.com',
                 From : "qlik.studios@gmail.com",
                 Subject : "New subscriber for Official D Rwoy!",
                 Body : 

@@ -6,18 +6,18 @@ window.addEventListener('DOMContentLoaded', () => {
     let countries = document.querySelector('#country');
     let email = document.querySelector('#email');
     let currentYear = document.querySelector('#date');
+    let currentYearMobile = document.querySelector('#date-mobile');
     let navLinks = document.querySelectorAll('.nav-link');
     let newsletter = document.querySelector('#newsletter');
     let newsletterBtn = document.querySelector('#newsletterBtn');
     let closeModalBtn = document.querySelector('#closeModalBtn');
     let subscribe = document.querySelector('#subscribe');
     let subscribeBtn = document.querySelector('#subscribeBtn');
-    let mainContent = document.querySelector('#main-content');
-
 
     // getting current year
     let newDate = new Date();
-    currentYear.innerHTML = newDate.getFullYear();
+    [currentYear, currentYearMobile]
+    .map(year => year.innerHTML = newDate.getFullYear());
 
     // display or hide nav menu
     toogleBtn.addEventListener('click', ()=> {

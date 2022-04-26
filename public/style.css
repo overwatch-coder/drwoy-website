@@ -878,11 +878,6 @@ html {
   margin-right: 0.75rem;
 }
 
-.mx-10 {
-  margin-left: 2.5rem;
-  margin-right: 2.5rem;
-}
-
 .ml-6 {
   margin-left: 1.5rem;
 }
@@ -1290,14 +1285,6 @@ html {
   background-image: url('images/music-bg.jpg');
 }
 
-.bg-gradient-to-r {
-  background-image: linear-gradient(to right, var(--tw-gradient-stops));
-}
-
-.bg-gradient-to-l {
-  background-image: linear-gradient(to left, var(--tw-gradient-stops));
-}
-
 .from-purple-300 {
   --tw-gradient-from: #d8b4fe;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(216 180 254 / 0));
@@ -1306,11 +1293,6 @@ html {
 .from-secondary {
   --tw-gradient-from: #7C15AC;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(124 21 172 / 0));
-}
-
-.from-purple-500 {
-  --tw-gradient-from: #a855f7;
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(168 85 247 / 0));
 }
 
 .to-gray-500 {
@@ -1323,22 +1305,6 @@ html {
 
 .to-purple-600 {
   --tw-gradient-to: #9333ea;
-}
-
-.to-pink-500 {
-  --tw-gradient-to: #ec4899;
-}
-
-.to-pink-900 {
-  --tw-gradient-to: #831843;
-}
-
-.to-pink-700 {
-  --tw-gradient-to: #be185d;
-}
-
-.to-pink-800 {
-  --tw-gradient-to: #9d174d;
 }
 
 .bg-cover {
@@ -1431,16 +1397,6 @@ html {
   padding-right: 3rem;
 }
 
-.px-10 {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-}
-
-.px-2 {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-}
-
 .pt-10 {
   padding-top: 2.5rem;
 }
@@ -1475,10 +1431,6 @@ html {
 
 .pb-10 {
   padding-bottom: 2.5rem;
-}
-
-.pb-8 {
-  padding-bottom: 2rem;
 }
 
 .text-left {
@@ -1570,14 +1522,6 @@ html {
 
 .lowercase {
   text-transform: lowercase;
-}
-
-.leading-3 {
-  line-height: .75rem;
-}
-
-.leading-5 {
-  line-height: 1.25rem;
 }
 
 .tracking-normal {
@@ -2078,11 +2022,6 @@ html {
     font-size: 4.5rem;
     line-height: 1;
   }
-
-  .sm\:text-lg {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
-  }
 }
 
 @media (min-width: 768px) {
@@ -2158,16 +2097,6 @@ html {
     margin-right: 1.25rem;
   }
 
-  .md\:mx-10 {
-    margin-left: 2.5rem;
-    margin-right: 2.5rem;
-  }
-
-  .md\:mx-16 {
-    margin-left: 4rem;
-    margin-right: 4rem;
-  }
-
   .md\:ml-2 {
     margin-left: 0.5rem;
   }
@@ -2198,14 +2127,6 @@ html {
 
   .md\:mb-1 {
     margin-bottom: 0.25rem;
-  }
-
-  .md\:mr-16 {
-    margin-right: 4rem;
-  }
-
-  .md\:mt-10 {
-    margin-top: 2.5rem;
   }
 
   .md\:block {
@@ -2290,11 +2211,6 @@ html {
     padding-bottom: 0.25rem;
   }
 
-  .md\:px-10 {
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
-  }
-
   .md\:pr-6 {
     padding-right: 1.5rem;
   }
@@ -2338,11 +2254,6 @@ html {
   .md\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
-  }
-
-  .md\:text-lg {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
   }
 
   .md\:tracking-wide {

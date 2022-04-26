@@ -74,7 +74,7 @@
     <!-- Main Content -->
     <main id="main-content" class="md:container relative mt-10">     
         <!-- Hero section goes here -->
-        <section id="home" class="container flex-shrink-0 grid-cols-2 place-items-center md:grid bg-hero-image bg-no-repeat bg-cover bg-center bg-fixed">
+        <section id="home" class="mx-5 sm:mx-10 md:mx-0 md:container flex-shrink-0 grid-cols-2 place-items-center md:grid bg-hero-image bg-no-repeat bg-cover bg-center bg-fixed">
             <a href="https://linktr.ee/drwoy" target="_blank" class="my-5 py-5">
                 <div class="col-span-1 md:mt-0 md:pr-6 lg:pr-0">
                     <img src="images/drwoy.png" alt="hero image" class="hidden md:block shadow lg:w-3/4 object-cover rounded-md">
@@ -86,7 +86,7 @@
                         
                         <span class="md:block relative">
                             <i class="text-light absolute md:-top-12 lg:-top-10 -left-10 lg:-left-16 md:mx-5 bi bi-music-note-beamed transform -rotate-45 transition animate-ping"></i>
-                            Now that I'm
+                            <span>Now that I'm</span>
                         </span>
                         
                         <span class="md:pt-3 md:block relative">a man 
@@ -97,7 +97,7 @@
                     
                     <p class="uppercase text-light text-4xl md:text-xl lg:text-base mt-5 font-bold animate-bounce">Available Now!</p>
                     
-                    <button class="hover:after:content-['🎵'] btn bg-secondary mt-7 px-6 py-2 mb-10">
+                    <button class="hover:after:content-['🎵'] btn bg-secondary mt-7 px-6 py-2 mb-10 hover:border-2 hover:border-gray-300">
                         <a href="https://linktr.ee/drwoy" target="_blank" class="uppercase">Listen</a>
                     </button>
                 </div> 
@@ -136,15 +136,15 @@
 
 
         <!-- Music section goes here -->
-        <section class="mt-24 md:mt-32 py-5 container bg-music-image bg-no-repeat bg-cover bg-center bg-fixed" id="music">
+        <section class="mt-24 md:mt-32 py-5 px-3 md:container bg-music-image bg-no-repeat bg-cover bg-center bg-fixed" id="music">
             <!-- Music header -->
             <div class="font-montserrat rounded my-3 flex flex-col md:flex-row justify-between items-center bg-primary">
                 <h1 class="text-light uppercase pt-3 md:pt-0 mx-5 text-3xl">Music</h1>
 
-                <div class="rounded-t md:rounded-r text-center mt-5 md:mt-0 shadow px-3 flex justify-end py-4 text-primary bg-light transition">
-                    <a href="https://music.apple.com/us/artist/danny-musique/1575023181" target="_blank" class="hover:text-black transition hover:font-mono">Listen on Apple Music</a>
+                <div class="md:rounded-r text-center mt-5 md:mt-0 shadow px-3 flex justify-end py-4 text-primary bg-light transition">
+                    <a href="https://music.apple.com/us/artist/danny-musique/1575023181" target="_blank" class="text-sm md:text-base hover:text-black transition hover:font-mono">Listen on Apple Music</a>
                     <span class="border-[1px] border-primary mx-3"></span>
-                    <a href="https://open.spotify.com/artist/46BWKg5bywuLNSZArFrvfO" target="_blank" class="hover:text-black transition hover:font-mono">Listen on Spotify</a>
+                    <a href="https://open.spotify.com/artist/46BWKg5bywuLNSZArFrvfO" target="_blank" class="text-sm md:text-base hover:text-black transition hover:font-mono">Listen on Spotify</a>
                 </div>
             </div>
             <!-- End of music header -->
@@ -159,13 +159,13 @@
 
 
         <!-- Video section goes here -->
-        <section class="mt-24 pt-5 container" id="videos">
+        <section class="mt-24 pt-5 px-3 md:container" id="videos">
             <!-- Video header -->
             <div class="font-montserrat rounded my-3 flex flex-col md:flex-row justify-between items-center bg-primary">
                 <h1 class="text-light uppercase pt-3 md:pt-0 mx-5 text-3xl">Video</h1>
 
-                <div class="hover:bg-primary hover:border-2 hover:border-lime-50 rounded-t md:rounded-r text-center mt-5 md:mt-0 shadow px-3 flex justify-end py-4 text-primary hover:text-light bg-light transition">
-                    <a href="https://www.youtube.com/c/DannyMusique" target="_blank" class="hover:text-light hover:text-lg transition">Watch on Youtube</a>
+                <div class="hover:border-[1px] hover:border-black rounded-t md:rounded-r text-center mt-5 md:mt-0 shadow px-3 flex justify-end py-4 text-primary bg-light transition">
+                    <a href="https://www.youtube.com/c/DannyMusique" target="_blank" class="text-sm md:text-base transform hover:text-black hover:scale-110 transition">Watch on Youtube</a>
                 </div>
             </div>
             <!-- End of video header -->
@@ -178,13 +178,13 @@
                     <div class="swiper-wrapper">
                     <!-- Youtube Slides -->
                         <div class="swiper-slide">
-                            <div style="width: 100%; height: 600px;" class="youtube rounded-md" id="E2nQ5-xM2Tk"></div>
+                            <div style="width: 100%; height: 500px;" class="youtube rounded-md" id="E2nQ5-xM2Tk"></div>
                         </div>
                         <div class="swiper-slide">
-                            <div style="width: 100%; height: 600px;" class="youtube rounded-md" id="L-5AtWIZ5z8"></div>
+                            <div style="width: 100%; height: 500px;" class="youtube rounded-md" id="L-5AtWIZ5z8"></div>
                         </div>
                         <div class="swiper-slide">
-                            <div style="width: 100%; height: 600px;" class="youtube rounded-md" id="2FikRYrknGc"></div>
+                            <div style="width: 100%; height: 500px;" class="youtube rounded-md" id="2FikRYrknGc"></div>
                         </div>
                     </div>
 
@@ -203,7 +203,7 @@
 
         
         
-        <div class="container bg-lime-50 md:w-[93%]">
+        <div class="md:container bg-lime-50 md:w-[93%]">
 
             <!-- Merch section goes here -->
             <section class="font-montserrat container mt-24 lg:mt-2 pt-16" id="merch">
@@ -215,7 +215,7 @@
             <hr class="border-[0.3px] border-primary opacity-[0.1] mt-28">
 
             <!-- News and Update Section -->
-            <section class="container pt-10 mt-16 pb-16">
+            <section class="md:container pt-10 mt-8 pb-16">
                 <div class="flex flex-col lg:flex-row pb-10 md:justify-between justify-center place-items-center container">
                     <div>
                         <img src="images/drwoy-news.jpg" alt="drwoy" class="object-contain hidden sm:block w-full md:hidden lg:block lg:w-4/5">
@@ -223,9 +223,10 @@
                     </div>
 
                     <div>
-                        <h1 class="mt-10 md:mt-0 uppercase font-bold text-primary text-4xl md:text-5xl xl:text-6xl tracking-wide">News and <br> Updates</h1>
+                        <h1 class="mt-10 md:mt-0 uppercase font-bold text-primary text-2xl md:text-4xl xl:text-6xl tracking-wide">News and <br> Updates</h1>
+
                         <p class="text-lg mt-4">Join our subscribers list to get the latest news, updates and special offers delivered directly to your inbox.</p>
-                        <button class="text-lg mt-4 p-3 w-full bg-primary text-light rounded-lg shaodw-lg hover:bg-gradient-to-l from-secondary to-purple-600 transition-all duration-1000 hover:shadow-2xl" id="subscribeBtn">Click to Subscribe</button>
+                        <button class="text-lg mt-4 p-3 w-full bg-primary text-light rounded-lg shaodw-lg hover:bg-gradient-to-l from-secondary to-purple-600 transition-all duration-1000 hover:shadow-2xl" id="subscribeBtn">Click to subscribe</button>
                     </div>
                 </div>
             <!-- End of News & Update Section -->

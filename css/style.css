@@ -28,7 +28,7 @@
 }
 
 .btn{
-    @apply hover:shadow-xl hover:border-2 hover:border-gray-300 focus:outline-none rounded text-light font-normal transition hover:bg-primary;
+    @apply hover:shadow-xl focus:outline-none rounded text-light font-normal transition hover:bg-primary;
 }
 
 
@@ -39,8 +39,8 @@
 .youtube {
     position: relative;
     padding-bottom: 0;
-    height: 100%;
     overflow: hidden;
+    height: 100%;
     max-width: 100%;
     background: #000;
     margin: 5px;
@@ -90,4 +90,22 @@
     position: absolute;
     background: url('//i.imgur.com/TxzC70f.png') no-repeat;
     cursor: pointer;
+  }
+
+  @media screen and (max-width: 578px){
+    .youtube{
+      height: 400px !important;
+    }
+  }
+
+  @media screen and (max-width: 767px){
+    .youtube{
+      height: 500px !important;
+    }
+  }
+
+  @media screen and (min-width: 768px){
+    .youtube{
+      height: 600px !important;
+    }
   }

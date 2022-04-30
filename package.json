@@ -4,8 +4,8 @@
   "description": "A music website for artist D Rwoy",
   "main": "tailwind.config.js",
   "scripts": {
-    "dev": "npx tailwindcss -i ./css/style.css -o ./public/style.css",
-    "watch": "npx tailwindcss -i ./css/style.css -o ./public/style.css --watch"
+    "dev": "npx tailwindcss -i ./css/style.css -o ./docs/style.css",
+    "watch": "npx tailwindcss -i ./css/style.css -o ./docs/style.css --watch"
   },
   "repository": {
     "type": "git",

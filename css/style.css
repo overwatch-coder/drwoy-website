@@ -19,6 +19,10 @@
     @apply text-sm mr-5 text-light uppercase transition duration-500 ease-in-out lg:text-base hover:opacity-80 hover:text-black hover:font-extrabold hover:bg-transparent;
 }
 
+.modal{
+  @apply fixed top-[56%] right-1/2 left-1/2 transition-all duration-[1500ms]  transform -translate-x-1/2 -translate-y-1/2 z-[15] w-screen h-screen bg-[rgba(0,0,0,0.4)];
+}
+
 .social-icon{
     @apply text-base sm:text-lg md:text-xl text-white md:hover:text-secondary md:hover:opacity-90 hover:text-black;
 }
@@ -30,7 +34,6 @@
 .btn{
     @apply hover:shadow-xl focus:outline-none rounded text-light font-normal transition hover:bg-primary;
 }
-
 
 .form-focus{
   @apply rounded focus:border-primary focus:border-2 focus:ring-0 focus:outline-none;

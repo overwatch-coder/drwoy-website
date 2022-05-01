@@ -6,7 +6,7 @@ module.exports = {
         'black-shade': 'linear-gradient(180deg, #302E2E 0%, #242323 9%, #292424 68%, #312E2E 100%)',
         'music-image': "url('images/music-bg.jpg')",
         'music-image-2': "url('images/music-2.jpg')",
-        'hero-image': "url('images/hero-bg.jpg')",
+        'hero-image': "url('images/hero-image.jpg')",
       },
       colors: {
         'primary': '#4D106B',

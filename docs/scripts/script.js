@@ -13,6 +13,8 @@ window.addEventListener('DOMContentLoaded', () => {
     let closeModalBtn = document.querySelector('#closeModalBtn');
     let subscribe = document.querySelector('#subscribe');
     let subscribeBtn = document.querySelector('#subscribeBtn');
+    let modal = document.querySelector('.modal');
+    const body = document.querySelector('body');
 
     // getting current year
     let newDate = new Date();
@@ -68,17 +70,26 @@ window.addEventListener('DOMContentLoaded', () => {
     });
 
     // Writing script to display or hide newsletter page
-
-    // function to toggle subscribe modal
     const toggleModal = ()=>{
+        modal.classList.toggle('scale-100');
         newsletter.classList.toggle('scale-100');
         newsletter.classList.toggle('flex');
     }
-    
+
     // function to select any button which is clicked
     const clickModalToggle = (btnToClick)=>{
         btnToClick.addEventListener('click', ()=>{
             toggleModal();
+            // function to toggle subscribe modal
+            body.addEventListener('click', (event)=>{
+                const targetedEvent = event.target;
+                    if(targetedEvent.classList.contains('modal')){
+                        modal.classList.remove('scale-100');
+                        newsletter.classList.remove('scale-100');
+                        modal.classList.add('scale-0');
+                        newsletter.classList.add('scale-0');
+                    }
+            })
         })
     }
 
